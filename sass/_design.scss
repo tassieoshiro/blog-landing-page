@@ -1,0 +1,37 @@
+.design {
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .container-design {
+    &__img {
+      height: 400px;
+      margin-top: 3rem;
+      background-image: url("/images/illustration-editor-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__text {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+
+      .text-1 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        h1 {
+          margin-bottom: 15px;
+        }
+      }
+      .text-2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        h1 {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

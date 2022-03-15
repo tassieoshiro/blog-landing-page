@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// PRIMARY
+$primary-red: #ff525d;
+// Light red (CTA text)
+$light-red: #ff7a85;
+// Very light red (CTA hover background)
+$dark-blue: #1f3f5b;
+// Very dark blue (headings)
+
+// NEUTRAL
+$white: #ffffff;
+$gray-blue: hsl(240, 3%, 79%);
+// Grayish blue (footer text)
+$gray-dark: hsl(206, 13%, 34%);
+// Very dark grayish blue (body copy)
+$footer-color: hsl(240, 10%, 16%);
+// Very dark black blue (footer background)
+
+// GRADIENT
+// Background gradient - Intro/CTA mobile nav
+$gradient-light: hsl(13, 100%, 72%);
+$gradient-red: hsl(353, 100%, 62%);
+
+// Background gradient - body
+$gradient-dark: hsl(237, 18%, 21%);
+$gradient-blue: hsl(237, 23%, 32%);
+$color-links: hsl(237, 18%, 21%);
+$icon-links: hsl(13, 100%, 72%);
+
+// BG GRADIENT
+@mixin gradient-hero {
+  background: linear-gradient(
+    to right,
+    rgba($gradient-dark, 1),
+    rgba($gradient-blue, 1)
+  );
+}
+
+@mixin gradient-btn {
+  background: linear-gradient(
+    to right,
+    rgba($gradient-light, 1),
+    rgba($gradient-red, 1)
+  );
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+// RESPONSIVE
+@mixin media-small {
+  @media screen and (min-width: 468px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

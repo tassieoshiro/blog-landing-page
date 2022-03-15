@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+  <main class="container">
+
+  
+  <!-- The logo and MENU -->
+  <header class="container-home">
+    <!-- HABURGER MENU -->
+    <div class="menu-btn">
+      <span class="menu-btn__burger"></span>
+    </div>
+    <!-- LOGO -->
+      <img src="/images/logo.svg" alt="logo-image" class="logo">
+      <nav class="nav">
+        <div class="logo-desktop"></div>
+        <ul class="menu-nav">
+          <li class="menu-nav__item"><a href="#" class="menu-nav__link">Product <i class="fa-solid fa-chevron-down"></i></a></li>
+          <li class="menu-nav__item"><a href="#" class="menu-nav__link">Company <i class="fa-solid fa-chevron-down"></i></a></li>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown">
+            <li class="menu-nav__item">
+              <a href="#" onclick="myFunction()" class="menu-nav__link dropbtn">Connect <i id="myIcon" class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Contact</a>
+              <a href="#">Newsletter</a>
+              <a href="#">Linkedin</a>
+            </div>
+          </div>
+          <hr class="solid">
+          <div class="buttons">
+            <button class="buttons__login">Login</button>
+            <button class="buttons__sign">Sign Up</button>
+          </div>
+        </ul>
+      </nav>
+    <div class="container-home__cta">
+      <div class="container-home__cta--text">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+      </div>
+      <div class="container-home__cta--buttons">
+        <button class="start">Start for Free</button>
+        <button class="learn">Learn More</button>
+      </div>
+    </div>
+  </header>
+  <!-- DESIGN SECTION -->
+  <section class="design">
+    <h1>Designed for the future</h1>
+    <div class="container-design">
+      <div class="container-design__img">
+        
+      </div>
+      <div class="container-design__text">
+        <div class="text-1">
+          <h1>Introducing an extensible editor</h1>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+        </div>
+        <div class="text-2">
+          <h1>Robust content management</h1>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STATE SECTION -->
+  <section class="state">
+    <div class="state__bg">
+      <div class="state__bg--phone">
+        <img src="/images/illustration-phones.svg" alt="phone-picture">
+      </div>
+      <div class="state__bg--desc">
+        <h1>State of the Art Infrastructure</h1>
+        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+    </div>
+  </section>
+  <!-- FREE SECTION -->
+  <section class="free">
+    <div class="free-container">
+      <div class="free-container__img"></div>
+      <div class="free-container__description">
+        <h1>Free, open, simple</h1>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <h1>Powerful tooling</h1>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <img src="/images/logo.svg" alt="footer-logo">
+      <div class="flex-item">
+        <h1>Product</h1>
+        <a href="#" class="footer-links">Overview</a>
+        <a href="#" class="footer-links">Pricing</a>
+        <a href="#" class="footer-links">Marketplace</a>
+        <a href="#" class="footer-links">Features</a>
+        <a href="#" class="footer-links">Integrations</a>
+      </div>
+      <div class="flex-item">
+        <h1>Company</h1>
+        <a href="#" class="footer-links">About</a>
+        <a href="#" class="footer-links">Team</a>
+        <a href="#" class="footer-links">Blog</a>
+        <a href="#" class="footer-links">Careers</a>
+      </div>
+      <div class="flex-item">
+        <h1>Connect</h1>
+        <a href="#" class="footer-links">Contact</a>
+        <a href="#" class="footer-links">Newsletter</a>
+        <a href="#" class="footer-links">Linkedin</a>
+      </div>
+      <div class="copy">
+        <p>&copy; 2022 Blogr</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/main.js"></script>
+</main>
+</body>
+</html>

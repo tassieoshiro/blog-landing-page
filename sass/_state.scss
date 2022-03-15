@@ -1,0 +1,32 @@
+.state {
+  margin-top: 18rem;
+  &__bg {
+    background-image: url("/images/bg-pattern-circles.svg");
+    background-size: cover;
+    background-position: 50% -180px;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: $gradient-dark;
+    border-bottom-left-radius: 100px 100px;
+    border-top-right-radius: 100px 100px;
+
+    &--phone {
+      img {
+        width: 100%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--desc {
+      transform: translateY(-100%);
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      color: #fff;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
